@@ -24,7 +24,7 @@ struct WiFiNameApp: App {
             }
             .keyboardShortcut("q")
         } label: {
-            Text(monitor.menuBarTitle)
+            Image(nsImage: MenuBarImage.make(top: monitor.topLine, bottom: monitor.bottomLine))
         }
         .menuBarExtraStyle(.menu)
     }
